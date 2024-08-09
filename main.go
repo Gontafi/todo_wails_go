@@ -14,7 +14,6 @@ import (
 var assets embed.FS
 
 func main() {
-
 	instanse := db.InitDB()
 	// Create an instance of the app structure
 	app := NewApp(instanse)

@@ -8,11 +8,12 @@
   let dueDate = '';
 
   onMount(async () => {
-    tasks = await GetTasks();
-  });
+  const fetchedTasks = await GetTasks();
+  tasks = Array.isArray(fetchedTasks) ? fetchedTasks : [];
+});
+
 
   async function addTask() {
-    if (newTask.trim() === '') return;
 
     const task = {
       text: newTask,

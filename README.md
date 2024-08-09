@@ -1,5 +1,7 @@
 # To-Do List Application
 
+![app](./app.jpg)
+
 This is a simple To-Do List desktop application built using the [Wails](https://wails.io/) framework. The application allows users to create, view, mark as completed, and delete tasks. The state of the tasks is saved in an SQLite database, ensuring persistence between sessions.
 
 ## Features
